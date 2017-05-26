@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Curso Html5</title>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="css/miestilo.css">
+      <script src="js/canvas.js"></script>
+    </head>
+<body>
+
+  <br />
+  <div style="text-align: center;">
+  <b>Audio</b> </div>
+  <div style="text-align: center;">
+  <br /></div>
+  <div style="text-align: left;">
+  Es muy similar a la etiqueta de video en cuanto a los atributos&nbsp;</div>
+  <ul>
+  <li>controls es para que aparezcan los controles en la pantalla en el momento que cargue la página.</li>
+  <li>autoplay es usado para que apenas cargue la página se reproduzca de forma automática.</li>
+  <li>loop se usa para que se repita después de finalizar el audio.&nbsp;</li>
+  <li>Ejemplo:</li>
+  </ul>
+  &lt;!DOCTYPE Html&gt;<br />
+  &lt;html&gt;<br />
+  &nbsp;&nbsp;&nbsp; &lt;head&gt;<br />
+  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;meta charset="utf-8"&gt;<br />
+  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;title&gt;Audio&lt;/title&gt;<br />
+  &nbsp;&nbsp;&nbsp; &lt;/head&gt;<br />
+  &nbsp;&nbsp;&nbsp; &lt;body&gt;<br />
+  &nbsp;&nbsp;&nbsp; &lt;audio controls autoplay loop&gt;<br />
+  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;source src="uno.ogg" type="audio/ogg"&gt;<br />
+  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;source src="uno.mp3" type="audio/mp3"&gt;<br />
+  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Tu navegador no soporta la etiqueta de audio de html5.<br />
+  &nbsp;&nbsp;&nbsp; &lt;/audio&gt;<br />
+  &nbsp;&nbsp;&nbsp; &lt;/body&gt;<br />
+  &lt;/html&gt; <br />
+  <br />
+  <br />
+  <div style="text-align: left;">
+  Aparte en la etiqueta source lleva también la ruta donde se encuentra ubicado el archivo a reproducir.</div>
+  <div style="text-align: left;">
+  Cuando hablamos de la ruta las mismas pueden ser:</div>
+  <ul>
+  <li>Absolutas: <span style="color: orange;">"file:///home/canaima/Escritorio/index.html"<span style="color: black;">.</span></span>&nbsp; </li>
+  </ul>
+  <ul>
+  <li>Relativas:audio <span style="color: orange;">"/uno.mp3"</span>.</li>
+  </ul>
+  &nbsp;Otra manera de usarlo es con botones para reproducir, pausar, subir o bajar volumen de esta manera: <br />
+  <div style="text-align: left;">
+  <br /></div>
+  <div style="text-align: left;">
+  &lt;audio id="audio1" src="uno.mp3"&gt;&lt;/audio&gt;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div&gt;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;button onclick="document.getElementById('audio1').play()"&gt;</div>
+  <div style="text-align: left;">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reproducir el Audio</div>
+  <div style="text-align: left;">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/button&gt;</div>
+  <div style="text-align: left;">
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;button onclick="document.getElementById('audio1').pause()"&gt;</div>
+  <div style="text-align: left;">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pausar el Audio</div>
+  <div style="text-align: left;">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/button&gt;</div>
+  <div style="text-align: left;">
+  <br />
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &lt;button onclick="document.getElementById('audio1').volume+=0.1"&gt;</div>
+  <div style="text-align: left;">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Aumentar el Volumen&lt;/button&gt;</div>
+  <div style="text-align: left;">
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;button onclick="document.getElementById('audio1').volume-=0.1"&gt;</div>
+  <div style="text-align: left;">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Disminuir el Volumen</div>
+  <div style="text-align: left;">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/button&gt;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt; </div>
+  <div style="text-align: left;">
+  <br /></div>
+  <div style="text-align: left;">
+  Aca te muestro como se visualiza en el navegador ambos casos</div>
+  <div class="separator" style="clear: both; text-align: center;">
+  <a href="../imagenes/audio.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="94" src="https://2.bp.blogspot.com/-YVfreRtlUE4/U8AIpHC3ahI/AAAAAAAABz0/6e4fvm3duy0/s1600/audio.png" width="320" /></a></div>
+  <div style="text-align: left;">
+  <br /></div>
+  <div style="text-align: left;">
+  <br /></div>
+  <div style="text-align: left;">
+  &nbsp; </div>
+  <div style="text-align: left;">
+  <br /></div>
+  <div style="text-align: left;">
+  <br /></div>
+
+</body>
+</html>

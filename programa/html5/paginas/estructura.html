@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Estructura básica</title>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="../css/miestilo.css">
+      <script src="../js/canvas.js"></script>
+    </head>
+<body>
+
+  <header >
+  <img id="imagina" onclick="agregarClase('imagina','ocultarArticulo')"
+  src="../imagenes/html5.gif" alt="HTML5">
+      </header>
+
+  <nav ><ol>
+    <li class ="bordesRedondos" id="li"
+      onclick="redireccionar('que.html')"
+      onmouseover="agregarBoxShadow('li')"
+      onmouseout="quitarBoxShadow('li'),quitarClase('articulo1','mostrarArticulo')" >
+        ¿Qué es Html5?
+    </li>
+    <li class ="bordesRedondos" id="est">
+    Estructura Básica
+    </li>
+    <li class ="bordesRedondos" id="ele"
+    onmouseover="agregarBoxShadow('ele')"
+    onmouseout="quitarBoxShadow('ele')">
+      Elementos
+    </li>
+    <li class ="bordesRedondos" id="atr"
+    onmouseover="agregarBoxShadow('atr')"
+    onmouseout="quitarBoxShadow('atr')">
+      Atributos
+    </li>
+    <li class ="bordesRedondos" id="tab"
+    onmouseover="agregarBoxShadow('tab')"
+    onmouseout="quitarBoxShadow('tab')">
+      Tablas
+    </li>
+    <li class ="bordesRedondos" id="lis"
+    onmouseover="agregarBoxShadow('lis')"
+    onmouseout="quitarBoxShadow('lis')">
+      Listas
+    </li>
+    <li class ="bordesRedondos" id="can"
+    onmouseover="agregarBoxShadow('can')"
+    onmouseout="quitarBoxShadow('can')">
+      Canvas</li>
+    <li class ="bordesRedondos" id="caj"class="bordesRedondosCasi"
+    onmouseover="agregarBoxShadow('caj')"
+    onmouseout="quitarBoxShadow('caj')">
+      Canvas con JavaScript
+    </li>
+  </ol></nav>
+
+    <article  ><h4> &lt;!DOCTYPE html&gt;</h4>  Define tipo de documento que se encuentra bajo el estandar de HTML 5<br>
+    <h4>&lt;html&gt;</h4> la raíz de un documento HTML o XHTML.<br><br>
+    &lt;head&gt;Representa una colección de metadatos acerca del documento.<br>
+    &lt;/title&gt;nombre para mostrar en la parte superior del navegador&lt;/title&gt;<br>
+    &lt;meta charset=utf-8"/ &gt; Especifica la codificación de caracteres para el documento HTML<br>
+    &lt;link rel="stylesheet" href="styles.css"&gt; Hacemos referencia a los archivos para el estilo de la página.<br>
+    &lt;script src="js/funciones.js"&gt;Para enlazar nuestro archivo de JavaScript externo.&lt;/script&gt;<br>
+    &lt;/head&gt;<br><br>
+    &lt;body&gt;Todas las etiquetas que van acá son para mostrarlas el navegador<br>
+    &lt;header&gt;Es el encabezado del documento, por lo general solo contiene el logotipo.&lt;/header&gt;
+
+    &lt;nav&gt; Aquí es donde se coloca en menú de nuestra pagina web.
+
+  &lt;article&gt; y &lt;section&gt;
+  Con estas etiquetas se han creado algunas discusiones de cual debería ir dentro de cual, <br>
+  la mayoría de las personas hemos llegado a la conclusion que la etiqueta
+    &lt;section&gt;es utilizada para realizar divisiones dentro de un articulo,<br> así que colocamos
+    &lt;article&gt; como etiqueta padre y dentro de esta colocamos la
+     &lt;section&gt; de cada articulo.
+
+  &lt;aside&gt; Esta etiqueta es utilizada para elementos no principales, podemos poner dentro de esta etiqueta <br>
+    publicidad, calendarios, artículos recomendados, links externos, botones de redes sociales etc.&lt;/aside&gt;
+
+  &lt;footer&gt; Esta etiqueta esta echa para el pie de la pagina donde se coloca los créditos.&lt;/footer&gt;
+
+  Por ultimo cerramos las etiquetas que quedaron pendientes&lt;/html&gt;&lt;/body&gt;</article>
+
+    <section ><br />
+  &lt;!DOCTYPE html&gt;<br />
+  &lt;html&gt;<br />
+  &nbsp;&nbsp; &lt;head&gt;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset="utf-8"&gt;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;HTML5&lt;/title&gt;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src=""&gt;&lt;/script&gt;<br />
+  &nbsp;&nbsp; &lt;/head&gt;<br />
+  &nbsp;&nbsp; &lt;body&gt;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Mi Primera Página Html&lt;/h1&gt;<br />
+  &nbsp;&nbsp; &lt;/body&gt;<br />
+  &lt;/html&gt;<br /></section>
+    <aside>calendario redes sociales</aside>
+    <footer>Creditos</footer>

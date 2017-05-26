@@ -1,0 +1,41 @@
+rrecorrer arreglo asciativo valor y clave
+foreach($this->producto as $uno => $dos )
+			{
+				if($prod===$uno){
+				echo "Son iguales<br>";
+				
+				}else{
+					 echo " noSon iguales<br>";}
+			
+		}
+otro ejemplo 
+
+$equipo = array(portero=>'Cech', defensa=>'Terry', medio=>'Lampard', delantero=>'Torres');
+ 
+		foreach($equipo as $posicion=>$jugador)
+		{
+			echo "El " . $posicion . " es " . $jugador;
+			echo "<br>";
+		}
+
+		*/
+//$equipo['delantero'];
+
+
+
+otro más 	/*	$array = array('fruta1' => 'manzana', 'fruta2' => 'naranja','fruta3' => 'uva', 'fruta4' => 'manzana', 'fruta5' => 'manzana');
+		$array["fruta6"]="manzana";
+		$cantidades =0;
+		// Este ciclo muestra todas las claves del array asociativo
+		// donde el valor equivale a "manzana"
+		while (current($array)) {
+	
+        		echo key($array).'<br />';
+	
+  		$this->cantidades = $this->cantidades+1;
+    		next($array);
+		echo $this->cantidades;
+
+		}
+		
+		*/

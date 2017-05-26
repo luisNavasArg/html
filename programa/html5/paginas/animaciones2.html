@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Animaciones</title>
+        <meta charset="utf-8" />
+        <style>
+          @-moz-keyframes myfirst {
+
+            0%   {top: 0px; left: 0px; background: red;}
+            25%  {-moz-transform: translate(30px,60px); /* Mozilla*/}
+            50%  {top: 100px; left: 100px; background: yellow;}
+            75%  {top: 100px; left: 0px; background: green;}
+            100% {top: 0px; left: 0px; background: red;}
+            }
+            #trasladar {
+                        width:100px;
+                        height:100px;
+                        background-color:yellow;
+                        -moz-animation: myfirst 15s; /* mozilla */
+            }
+        </style>
+    </head>
+<body>
+    <h1>Transformaciones y Animaciones</h1>
+
+            <div id="trasladar"></div>
+</body>
+</html>

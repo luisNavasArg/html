@@ -1,0 +1,57 @@
+<!DOCTYPE Html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Ejemplo navegación</title>
+<link rel="stylesheet" href="../css/miestiloNavPag.css">
+  <script src="../js/canvas.js"></script>
+  <style>
+  .pagination {
+      display: inline-block;
+  }
+
+  .pagination a {
+      color: black;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      transition: background-color .3s;
+      border: 1px solid #ddd;
+  }
+
+  .pagination a.active {
+      background-color: orangeRed;
+      color: white;
+      border: 1px solid #4CAF50;
+  }
+
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+  </style>
+
+</head>
+
+<body>
+
+  <div class="pagina"><br>
+    <a href="#" class="active">Aspirantes</a>
+    <a href="#">Voluntarios</a>
+    <a href="#">Mentores</a>
+    <a href="#">Coordinadora</a>
+    <a href="#">Ministerio</a>
+    <a href="#">Buenos Aires Ciudad</a>
+  </div>
+  <p>Anterior/Siguiente botón:</p>
+  <div class="pagination">
+    <a href="#">Anterior</a>
+    <a href="#">Siguiente</a>
+  </div>
+
+  <p>Navegación por páginas:</p>
+  <div class="pagination">
+    <a href="#" class="active">Aspirantes</a>
+    <a href="#">Voluntarios</a>
+    <a href="#">Mentores</a>
+    <a href="#">Coordinadora</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Curso Html5</title>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="../css/miestilo.css">
+      <script src="../js/canvas.js"></script>
+    </head>
+<body>
+
+  <header >
+  <img id="imagina" onclick="agregarClase('imagina','ocultarArticulo')"
+  src="../imagenes/html5.gif" alt="HTML5">
+      </header>
+
+  <nav ><ol>
+    <li id="li">
+      ¿Qué es Html5?
+    </li>
+    <li class ="bordesRedondos" id="est"
+      onmouseover="agregarBoxShadow('est'),agregarClase('articulo2','mostrarArticulo')"
+      onclick="redireccionar('estructura.html')"
+      onmouseout="quitarBoxShadow('est'),quitarClase('articulo2','mostrarArticulo')">
+        Estructura Básica
+    </li>
+    <li class ="bordesRedondos" id="ele"
+    onclick="redireccionar('estructura.html')"
+    onmouseover="agregarBoxShadow('ele')"
+    onmouseout="quitarBoxShadow('ele')">
+      Elementos
+    </li>
+    <li class ="bordesRedondos" id="atr"
+    onmouseover="agregarBoxShadow('atr')"
+    onmouseout="quitarBoxShadow('atr')">
+      Atributos
+    </li>
+    <li class ="bordesRedondos" id="tab"
+    onmouseover="agregarBoxShadow('tab')"
+    onmouseout="quitarBoxShadow('tab')">
+      Tablas
+    </li>
+    <li class ="bordesRedondos" id="lis"
+    onmouseover="agregarBoxShadow('lis')"
+    onmouseout="quitarBoxShadow('lis')">
+      Listas
+    </li>
+    <li class ="bordesRedondos" id="can"
+    onmouseover="agregarBoxShadow('can')"
+    onmouseout="quitarBoxShadow('can')">
+      Canvas</li>
+    <li class ="bordesRedondos" id="caj"class="bordesRedondosCasi"
+    onmouseover="agregarBoxShadow('caj')"
+    onmouseout="quitarBoxShadow('caj')">
+      Canvas con JavaScript
+    </li>
+  </ol></nav>
+  <article id="articulo1"><p style="text-align:center;">HyperText Markup Language</p>
+<table>
+  <tr>
+    <td>hyper text</td>
+    <td>Markut Language</td>
+  </tr>
+  <tr>
+    <td>Son textos que contiene enlaces a otros documentos por medio
+      de links y podemos navegar de la forma en que queramos.
+    </td>
+    <td>lenguaje de marcado para darle Formato Presentación y
+        Significado a un contenido de un archivo de texto.
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

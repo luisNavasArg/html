@@ -1,0 +1,30 @@
+<!DOCTYPE Html>
+<html>
+	<head>
+		<title>Protipo</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+		//funciona como una clase y la instanciamos y heredamos todas los atributos y funciones
+			var nombre=" ";
+			var apellido = " ";
+			//creamos el prototype
+			function Tutor(nombre,apellido){
+				this.nombre = nombre;
+				this.saludar = function(){
+					//console.log("Hola a todos soy "+this.nombre);
+					document.write("Hola a todos soy "+this.nombre);
+				}
+				if(typeof apellido !== "undefined"){
+					this.nombre_completo = nombre +" "+apellido;
+				}
+			}
+			var luis = new Tutor("Luis","Navas");
+			console.log(luis);
+			window.alert(luis);
+			document.write(luis.nombre_completo);
+			console.log(5 + 6);
+		</script>
+	</body>
+</html>

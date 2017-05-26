@@ -1,0 +1,65 @@
+  #explica{
+    position:absolute;
+    top:1100px;
+    left:10px;
+    z-index:10;
+    background-color:yellow;
+    opacity:0.1;
+  }
+  ul{
+    list-style: none
+  }
+  .aa{ background-color: blue;}
+  .bb{ color:white;}
+  #tabla{
+    width: 200px;
+    height: 300px;
+    /*background-color: green;*/
+    position: absolute;
+    top: 70px;
+    left: 200px;
+  }
+  #boton1{
+    position: absolute;
+    top: 210px;
+    left: 200px;
+
+  }
+  #lista{
+    width: 200px;
+    height: 300px;
+  /*  background-color: blue;*/
+    position: absolute;
+    top: 70px;
+    left: 350px;
+  }
+  #boton2{
+    position: absolute;
+    top: 210px;
+    left: 350px;
+    z-index:10;
+  }
+  #res{
+    width: 200px;
+    height: 300px;
+    /*background-color: yellow;*/
+    position: absolute;
+    top: 70px;
+    left:450px;
+  }
+  #boton3{
+    position: absolute;
+    top: 210px;
+    left: 450px;
+    z-index:10;
+  }
+  .esconder{
+
+    opacity:0.0;
+  }
+  .mustra{
+    opacity: 1.0;
+  }
+  .bajar{
+    z-index: 0;
+  }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<title>Page Title</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="miestilo.css">
+<script src="canvas.js"></script>
+<script>
+window.onload = function()
+  {
+    //  document.getElementById("miBody").addEventListener( 'click' , 'degradado' );
+  }
+  </script>
+<style>
+
+</style>
+
+    <body onload="agregarClase()" >
+      <header  id="myHead"  >
+        <img id="imagina" src="programa/imagenes/html5.gif" alt="HTML5" style="width:128px;height:128px">
+        <h1 style="text-align:center;" >Programá tu futuro</h1>
+      </header>
+        <p>Ejemplo de tablas, menú y canvas</p>
+        <section>
+
+          Ejemplo de lista lamando las funciones de Canvas:
+          <ol>
+            <li onclick="dibujarCirculo()">dibujarCirculo()</li>
+            <li onclick="escribirTexto()">escribirTexto()</li>
+            <li onclick="tipodeTexto()">tipodeTexto()</li>
+            <li onclick="agregarClase()">agregarClase()</li>
+            <li onclick="degradado()">degradado()</li>
+            <li onclick="degradadoCircular()">degradadoCircular()</li>
+            <li onclick="dibujarImagen()">dibujarImagen()</li>
+            <li onclick="divCircular()">divCircular()</li>
+          </ol>
+              <canvas id="myCanvas" width="200" height="100"></canvas>
+              <a onclick="agregarClase()" style="cursor:pointer;" > dibujar</a>
+        <article><p>Inline - mediante el atributo de estilo en elementos HTML</p><p>
+          Interno - mediante el uso de un elemento &lt;style&gt; en la sección &lt;head&gt;</p><p>
+    Externo: mediante un archivo CSS externo</p></article>  </section>
+
+
+        <div id="myMap" style="width:400px;height:400px">aquí va mi mapa</div>
+        <div id="miDiv">Ejemplo de tabla:
+        <table border="3">
+          <tr>
+            <th>Proyecto</th>
+            <th>Aspirantes</th>
+          </tr>
+          <tr>
+            <td>1. Renta de autos</td>
+            <td>Fabian Tusolino<br>
+            Mariana Salguero<br>
+            Hernan P. Pernetti<br>
+            juan pablo perez lantes</td>
+          </tr>
+          <tr>
+            <td>
+            2. Tienda On Line</td>
+            <td>
+            Karina Peuzner<br>
+            Noelia Veizaga<br>
+            Xoana Gallina<br>
+            Nicolás Matta<br>
+            Roger Guillén.</td>
+          </tr>
+        </table></div>
+<div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.12),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>

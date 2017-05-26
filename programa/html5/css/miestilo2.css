@@ -1,0 +1,11 @@
+body{
+  background-image: url('../imagenes/montana.jpg');
+font-family: arial, sans-serif;
+text-align: left;
+}
+.body{
+margin: 0 auto;
+width: 70%;
+clear: both;
+
+}

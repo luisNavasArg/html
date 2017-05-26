@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+    }
+    #cuadrado{
+        border: solid 1px blue;
+        background:green;
+        width:30px;
+        height:30px;
+        position: absolute;
+    }
+    #contenedor{
+        margin:20px;
+        border: solid 1px blue;
+        background:orangeRed;
+        width:1030px;
+        height:530px;
+        position: absolute;
+    }
+    #enemigo{
+      border: solid 1px blue;
+      background:beige;
+      width:30px;
+      height:30px;
+      position: absolute;
+    }
+</style>
+<script>
+window.onload=function(){document.onkeydown=desplazar};
+    function desplazar(objeto){
+    var tecla = objeto.which;
+
+        var situacionY = document.getElementById("cuadrado").offsetLeft;
+         var situacionX = document.getElementById("cuadrado").offsetTop;
+         var sitXEnem = document.getElementById("enemigo").offsetTop;
+          switch (tecla){
+            case 37 :
+            if ((situacionY >=20) && (situacionY<=1000))
+                cuadrado.style.left = situacionY-20+"px";
+
+                break;
+            case 38 :
+            if ((situacionX >=20) && (situacionX<=500))
+                cuadrado.style.top = situacionX-20+"px" ;
+                if (situacionX == sitXEnem) {
+                  alert('Son Iguales');
+                
+                }
+                break;
+            case 39 :
+            if ((situacionY<=984) && (situacionY >=0))
+                cuadrado.style.left = situacionY+20+"px" ;break;
+            case 40 :
+            if ((situacionX<=480) && (situacionX >=0))
+                cuadrado.style.top = situacionX+20+"px" ;break;
+            default :alert("Se ha equivocado, debe pulsar las flechas del teclado");
+        }
+    }
+/*
+    this.enemigo=function(cuadrado,enemigo){
+                    var pos_el=this.getPosision(cuadrado),pos_ac=this.getPosision(enemigo);
+                    for(var i=pos_ac[1],total_i=pos_ac[1]+enemigo.offsetHeight;i<total_i;i++){
+                        if(i==pos_el[1]){
+                            for(var j=pos_ac[0],total_j=parseInt(pos_ac[0])+parseInt(enemigo.offsetWidth);j<total_j;j++){
+                                if(j==pos_el[0])
+                                    return [i,pos_ac];
+                                    alert(pos_ac);
+                            }
+                        }
+                    }
+                    return false;
+                };*/
+
+function choque(){
+  var posiY = document.getElementById("cuadrado").offsetLeft;
+  var posiX = document.getElementById("cuadrado").offsetTop;
+  var poY = document.getElementById("enemigo").offsetLeft;
+  var poX = document.getElementById("enemigo").offsetTop;
+}
+
+</script>
+<body>
+
+  <div id="contenedor">
+    <div id="cuadrado"></div>
+      <div id="enemigo"></div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE Html>
+<html>
+	<head>
+		<title>Protipo</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+	var curso ={
+		titulo: "Curso Javascript",
+		paginas: 19,
+		tutor: "LUis Navas",
+		getTutor:function(){
+			return this.tutor;
+			//return this.tutor.toUpperCase(); si quiero enviarlo mayúscula
+		},
+		setTutor: function(tutor){
+		//si no se le coloca nada o no esta definida la variable mostrara el valor anterior
+		if(tutor ==="" || (typeof tutor === "undefined")){ return;}
+			this.tutor=tutor;
+		}
+	};
+	document.write(curso.getTutor()+" "+curso.paginas+" t&iacute;tulo del curso: "+ curso.titulo);
+	curso.setTutor( );
+	document.write("<br> "+curso.getTutor());
+	</script>
+	</body>
+</html>

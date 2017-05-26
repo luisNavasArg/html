@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Ejemplo asignar valor</title>
+<script>
+function escribir(){
+document.write('hola mundo');
+}
+function llenarTextbox(valor){
+document.getElementById("textfield").value = valor;
+}
+</script>
+<script src="js/archivoClases.js"></script>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+<table width="800" border="0" cellspacing="0" cellpadding="0">
+<tr>
+
+<td><label >
+  <a href="" onclick="escribir();return false;">escribir</a>
+<input type="text" name="textfield" id="textfield"/>
+</label></td>
+</tr>
+<tr>
+<td>
+
+  <a id="abc" href="" onclick="llenarTextbox('luis'); return false;">abc</a></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

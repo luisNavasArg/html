@@ -1,0 +1,30 @@
+#menu{
+width: 100%;
+height: 200px;
+background: url(../imagenes/montana.jpg);
+}
+#menu_boton{
+width: 950px;
+height: 100px;
+background: #377D7A;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+opacity: 0.7;
+filter:alpha(opacity=70);
+}
+#menu_boton ul li{
+list-style: none;
+display: inline;
+font-weight: bold;
+padding: 10px;
+margin-top: 10px;
+}
+#menu_boton a{
+color:white;
+text-decoration: none;
+}
+#menu_boton ul li :hover{
+background: orangeRed;
+transition: all 0.45s;
+}

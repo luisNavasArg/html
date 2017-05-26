@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+     <title>Transformaciones en html5</title>
+     <meta charset="utf-8" />
+     <style>
+         td{
+             width:700px;
+             height:500px;
+             }
+         #rotar {
+                     width:100px;
+                     height:100px;
+                     background-color:blue;
+                     -moz-transform: rotate(30deg); /* Mozilla*/
+                 }
+
+         #trasladar {
+                     width:100px;
+                     height:100px;
+                     background-color:yellow;
+                     -moz-transform: translate(30px,60px); /* Mozilla*/
+                 }
+
+         #escalar {
+                     width:100px;
+                     height:100px;
+                     background-color:blue;
+                     -moz-transform: scale(2,3); /* Mozilla*/
+                 }
+
+         #inclinar {
+                     width:100px;
+                     height:100px;
+                     background-color:green;
+                     -moz-transform: skew(30deg,20deg); /* Mozilla*/
+                 }
+
+         #matrix {
+                     width:100px;
+                     height:100px;
+                     background-color:black;
+                     -moz-transform: matrix(0.866,0.5,-0.5,0.866,0,0); /* Mozilla*/
+                 }
+
+     </style>
+ </head>
+<body>
+ <h1>Transformaciones</h1>
+ <p>En html5 también contamos con las transformaciones en 2d, las usamos de la misma manera dentro de la etiqueta &lt;style&gt;&lt;/ style&gt; dentro de la cabecera y es mucho más sencillo que en las animaciones, utilizamos el atributo transform y usamos como propiedad un método dependiendo del caso que queremos
+
+ Ejemplo:<br>
+
+ -moz-transform: rotate(30deg); /* Mozilla*/  dentro del método va el parámetro 30 grados acá te muestro la lista de los métodos:<br>
+
+  translate() Se usa para mover el elemento de un documento dentro del paréntesis estos parámetros 50px,100px que representa las coordenadas en top y left.
+  rotate() Se usa para rotar y los parámetros del método son los grados a rotar el elemento 30deg 30grados.<br>
+  scale() Con el método escalar, el elemento aumenta o disminuye el tamaño, dependiendo de los parámetros dados para la anchura (eje X) y la altura (eje Y).<br>
+  skew() Con el método de inclinación, el elemento gira en un ángulo dado, en función de los parámetros dados para la (eje X) horizontal y las líneas (eje Y) vertical.<br>    Ejemplo:                                                                     -moz-transform:skew(30deg,20deg);
+  matrix() El método de la matriz toma seis parámetros, que contiene funciones matemáticas, que le permite: rotar, escalar, mover y el sesgado elementos.
+
+</p>
+ <table border=3>
+     <tr>
+         <th>Rotar</th>
+         <th>Trasladar</th>
+         <th>Escalar</th>
+         <th>Inclinar</th>
+         <th>Matrix</th>
+     </tr>
+     <tr>
+         <td>
+             <div id=rotar>
+         </div>
+         </td>
+     <td>
+         <div id=trasladar>
+         </div>
+     </td>
+     <td>
+         <div id=escalar>
+         </div>
+     </td>
+     <td>
+         <div id=inclinar>
+         </div>
+     </td>
+     <td>
+         <div id=matrix>
+         </div>
+     </td>
+ </tr>
+ </table>
+</body>
+</html>

@@ -1,0 +1,240 @@
+body{
+font-family: arial, sans-serif;
+text-align: center;
+}
+header{
+width: 100%;
+height: 230px;
+background: url(../imagenes/montana.jpg);
+}
+nav{
+/*  background: -webkit-radial-gradient(white, orangeRed);
+  background: -moz-radial-gradient(white, orangeRed);*/
+  box-shadow: 5px 10px 25px black;
+  width: 250px;
+  border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 30px 30px 30px 30px;
+  -webkit-border-radius:  30px 30px 30px 30px;
+  padding: 3px;
+}
+li{
+  background: -webkit-linear-gradient(yellow, white);
+    background: -moz-linear-gradient(yellow, white);
+    background: -o-linear-gradient(yellow, white);
+    border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+	margin: 10px;
+  width:180px;
+  height:30px;
+	padding: 3px;
+  font-family: 'Trebuchet MS', 'Lucida Grande',
+	  Verdana, Lucida, Geneva, Helvetica,
+	  Arial, sans-serif;
+    opacity:0.6;
+    list-style: none;
+    cursor: pointer;
+}
+
+li:hover{
+      box-shadow: 10px 10px 5px black;
+      opacity:0.9;
+}
+
+article{
+  position:absolute;
+  top:200px;
+  left: 320px;
+  padding: 10px;
+   border: 5px solid gray;
+   margin: 10px;
+   text-align: left;
+   background-color: white;
+}
+
+.invertirBotones{
+  background: -webkit-linear-gradient(white , yellow );
+    background: -moz-linear-gradient(white , yellow );
+    background: -o-linear-gradient(white , yellow );
+
+}
+#imagina{
+float:left;
+z-index: 10;
+width:300px;
+height:230px;
+}
+#art2{
+opacity: 0.0;
+
+}
+#art{
+  background: -webkit-linear-gradient(yellow, white);
+    background: -moz-linear-gradient(yellow, white);
+    background: -o-linear-gradient(yellow, white);
+	margin: 1em;
+  width:180px;
+  height:30px;
+}
+.texto{
+text-shadow: 1px 1px 2px black, 0 0 3px black, 0 0 1px blue;
+margin: 10px;
+padding-top: 70px;
+}
+
+.rojo
+{
+color:red;
+}
+.mostrarArticulo{
+opacity: 1.0;
+}
+.ocultarArticulo{
+opacity: 0.0;
+
+}
+/*DESDE AQUI ES CSS3*/
+.degradado2{
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, yellow); /* Standard syntax */
+}
+.degradado{
+  background: -webkit-linear-gradient(yellow, white);
+    background: -moz-linear-gradient(yellow, white);
+    background: -o-linear-gradient(yellow, white);
+}
+.degradadoIzquierda{
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, red , yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, red, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, red , yellow); /* Standard syntax */
+}
+.degradadoDiagonal{
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, red, yellow); /* Standard syntax */
+}
+.degradadoMultiplesColres{
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(red, yellow, green); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(red, yellow, green); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(red, yellow, green); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(red, yellow, green); /* Standard syntax */
+}
+.degradadoTransparencia{
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /*Standard*/
+}
+.degadadoRepit{
+  background: red; /* For browsers that do not support gradients */
+  /* Safari 5.1 to 6.0 */
+  background: -webkit-repeating-linear-gradient(red, yellow 10%, green 20%);
+  /* Opera 11.1 to 12.0 */
+  background: -o-repeating-linear-gradient(red, yellow 10%, green 20%);
+  /* Firefox 3.6 to 15 */
+  background: -moz-repeating-linear-gradient(red, yellow 10%, green 20%);
+  /* Standard syntax */
+  background: repeating-linear-gradient(red, yellow 10%, green 20%);
+}
+.degradadoRadio{
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(red, yellow, green); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(red, yellow, green); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(red, yellow, green); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(red, yellow, green); /* Standard syntax */
+}
+.degradadoDiferenciandoColor{
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(red 5%, yellow 15%, green 60%); /* Safari 5.1-6.0 */
+  background: -o-radial-gradient(red 5%, yellow 15%, green 60%); /* For Opera 11.6-12.0 */
+  background: -moz-radial-gradient(red 5%, yellow 15%, green 60%); /* For Firefox 3.6-15 */
+  background: radial-gradient(red 5%, yellow 15%, green 60%); /* Standard syntax */
+}
+.degradadoCirculoElipse{
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(circle, white, yellow, orangeRed); /* Safari */
+  background: -o-radial-gradient(circle, white, yellow, orangeRed); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, white, yellow, orangeRed); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle, white, yellow, orangeRed); /* Standard syntax */
+}
+.degradadoRepRadio{
+  background: red; /* For browsers that do not support gradients */
+  /* For Safari 5.1 to 6.0 */
+  background: -webkit-repeating-radial-gradient(red, yellow 10%, green 15%);
+  /* For Opera 11.6 to 12.0 */
+  background: -o-repeating-radial-gradient(red, yellow 10%, green 15%);
+  /* For Firefox 3.6 to 15 */
+  background: -moz-repeating-radial-gradient(red, yellow 10%, green 15%);
+  /* Standard syntax */
+  background: repeating-radial-gradient(red, yellow 10%, green 15%);
+}
+
+.agregarMatrix{
+
+  -ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */
+     -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0); /* Safari */
+     transform: matrix(1, -0.3, 0, 1, 0, 0);
+opacity:0.2;
+}
+
+
+
+.circular{
+   background: -webkit-radial-gradient(#0f0, #06f);
+   background: -moz-radial-gradient(#0f0, #06f);
+   border: 1px solid #333;
+   height: 200px;
+   width: 250px;
+}
+
+.agregarShadow{
+
+}
+
+.tranfTraslate{
+  -ms-transform: translate(150px, 100px); /* IE 9 */
+      -webkit-transform: translate(150px, 100px); /* Safari */
+      transform: translate(150px, 100px);
+
+}
+
+.tranfRotate{
+  -ms-transform: rotate(20deg); /* IE 9 */
+      -webkit-transform: rotate(20deg); /* Safari */
+      transform: rotate(20deg);
+
+}
+
+.tranScale{
+
+  -ms-transform: scale(-0.8, -1); /* IE 9 */
+     -webkit-transform: scale(-0.8, -1); /* Safari */
+     transform: scale(-0.8, -1);
+
+}
+
+.trasskewX{
+-ms-transform: skewX(20deg); /* IE 9 */
+   -webkit-transform: skewX(20deg); /* Safari */
+   transform: skewX(20deg);
+
+}
+.bordesRedondos {
+
+/*order: 0px solid #000000;*/
+}
+.bordesRedondosCasi {
+  border-radius: 0px 0px 51px 68px;
+-moz-border-radius: 0px 0px 51px 68px;
+-webkit-border-radius:  0px 0px 51px 68px;
+/*order: 0px solid #000000;*/
+}

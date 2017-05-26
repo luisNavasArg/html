@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <style type="text/css">
+        #base-map {    position:absolute;    left:0;    top:0;    width:500px;    height:300px;    z-index:1;    background-color: #CCCCCC;}
+        #user{position: absolute;left: 0;top: 00;width: 20px;height: 20px;z-index: 2;background-color: #006699;}
+        #flec {    position:absolute;    left:514px;    top:18px;    width:103px;    height:81px;    z-index:3;}
+        td{cursor:pointer;}
+      </style>
+      <script type="text/javascript">
+        function abajo(){
+        var posiciony=document.getElementById("user").offsetTop;
+        if ((posiciony >=0) && (posiciony <=260)) {
+          var abajo = document.getElementById("user").style.top=posiciony + 20+"px";
+
+        }else
+          var abajo = document.getElementById("user").style.top=posiciony-20+"px";
+        }
+
+        function arriba(){
+        var posiciony=document.getElementById("user").offsetTop;
+        if ((posiciony <=280) && (posiciony >=20) ) {
+          var arriba = document.getElementById("user").style.top=posiciony - 20+ "px";
+
+        }else
+          var arriba = document.getElementById("user").style.top=posiciony+20+"px";
+
+
+        }
+
+        function izquierda(){
+        var posicionx=document.getElementById("user").offsetLeft;
+          if ((posicionx <= 480) && (posicionx >=20)){
+
+          var izquierda = document.getElementById("user").style.left=posicionx  - 20 + "px";
+
+        }else
+        var izquierda = document.getElementById("user").style.left=posicionx  + 20 + "px";
+
+        }
+        function derecha(){
+          var posicionx=document.getElementById("user").offsetLeft;
+          if((posicionx >=0)&&(posicionx<=460)){
+
+            var derecha = document.getElementById("user").style.left=posicionx + 20 + "px";
+
+          }else
+         var derecha = document.getElementById("user").style.left=posicionx - 20 + "px";
+        }
+    </script>
+</head>
+<body>
+<div id="base-map"></div>
+<div id="user"></div>
+<table  id="flec" width="200" border="1">
+  <tr>
+    <td>&nbsp;</td>
+    <td onClick="arriba();">arriba</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td onClick="izquierda();">izquierda</td>
+    <td>&nbsp;</td><td onClick="derecha();">derecha</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td onClick="abajo();">abajo</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
