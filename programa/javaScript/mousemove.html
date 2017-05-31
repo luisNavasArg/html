@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function mostrarCoordenadas(event)
+{
+  var x=event.clientX;
+  var y=event.clientY;
+  var luis = document.getElementById('etiqueta');
+  luis.innerHTML="El valor en X es:"+x+" y en Y es:"+y;
+}
+</script>
+</head>
+
+<body>
+
+<div onmousemove="mostrarCoordenadas(event)"   style="background:blue;width:600px;height:1024px;" >
+<label id="etiqueta"></label>
+</div>
+
+</body>
+</html>
